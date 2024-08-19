@@ -1,5 +1,6 @@
 package com.example.spring_security_templete.config;
 
+import com.example.spring_security_templete.token.TokenRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -22,7 +23,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
     private final UserDetailsService userDetailsService;
-
+    private final TokenRepository tokenRepository;
 
 
     @Override
