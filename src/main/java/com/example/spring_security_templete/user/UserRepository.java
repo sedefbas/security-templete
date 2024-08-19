@@ -1,2 +1,10 @@
-package com.example.spring_security_templete.user;public class UserRepository {
+package com.example.spring_security_templete.user;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<Integer,User> {
+
+    Optional<User> findByEmail(String email);
 }
