@@ -1,1 +1,1 @@
-## son detaylar user branch de :) 
+## son detaylar user branch de , şuanda merge etmek istemedim. :) 
